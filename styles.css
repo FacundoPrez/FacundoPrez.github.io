@@ -1,0 +1,46 @@
+/* Base styles */
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.gif-container {
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+/* Make the iframe responsive */
+.gif-container iframe {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 480/389;
+}
+
+/* Responsive text adjustments */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    body {
+        padding: 10px;
+    }
+}
