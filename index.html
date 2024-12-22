@@ -12,9 +12,10 @@
     <div class="background"></div>
     <main>
         <div class="content-wrapper">
-            <h1 class="animate-title">Hola linda, animo estudiando, te quiero</h1>
+            <h1 class="animate-title" aria-label="Mensaje de ánimo">Hola linda, animo estudiando, te quiero</h1>
             <div class="gif-container">
-                <div class="heart left">❤</div>
+                <div class="loading-spinner"></div>
+                <div class="heart left" aria-hidden="true">❤</div>
                 <iframe 
                     src="https://giphy.com/embed/1JmGiBtqTuehfYxuy9" 
                     loading="lazy"
@@ -23,10 +24,11 @@
                     class="giphy-embed" 
                     allowfullscreen
                     title="Cat hug animation"
+                    onload="this.parentElement.classList.add('loaded')"
                 ></iframe>
-                <div class="heart right">❤</div>
+                <div class="heart right" aria-hidden="true">❤</div>
             </div>
-            <h3 class="signature">Facu</h3>
+            <h3 class="signature">Con amor, Facu</h3>
         </div>
     </main>
 </body>
